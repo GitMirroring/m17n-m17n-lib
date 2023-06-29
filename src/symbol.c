@@ -23,8 +23,6 @@
 /***en
     @addtogroup m17nSymbol
 
-    @brief Symbol objects and API for them.
-
     The m17n library uses objects called @e symbols as unambiguous
     identifiers.  Symbols are similar to atoms in the X library, but a
     symbol can have zero or more @e symbol @e properties.  A symbol
@@ -49,8 +47,6 @@
 */
 /***ja
     @addtogroup m17nSymbol シンボル
-
-    @brief シンボルオブジェクトとそれに関する API.
 
     m17n ライブラリは一意に決まる識別子として @e シンボル 
     と呼ぶオブジェクトを用いる。シンボルは X ライブラリのアトムと似ているが、
@@ -291,8 +287,8 @@ MTextPropDeserializeFunc msymbol__deserializer = deserialize_symbol;
 
 /* External API */
 
-/*** @addtogroup m17nSymbol */
-/*** @{ */
+/*** @addtogroup m17nSymbol
+     @{ */
 
 /*=*/
 /***en
@@ -728,9 +724,8 @@ msymbol_get_func (MSymbol symbol, MSymbol key)
 
 #include <stdio.h>
 
-/*** @addtogroup m17nDebug */
-/*=*/
-/*** @{ */
+/*** @addtogroup m17nDebug
+     @{ */
 
 /***en
     @brief Dump a symbol.

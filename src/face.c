@@ -49,7 +49,7 @@
     face is used.  */
 
 /***ja
-    @addtogroup m17nFace Face
+    @addtogroup m17nFace
     @brief フェースとは、M-text の見栄えを制御するオブジェクトである.
 
     @e フェース は #MFace 型のオブジェクトであり、M-text 
@@ -968,7 +968,7 @@ mface__update_frame_face (MFrame *frame)
 
 
 /* External API  */
-/*** @addtogroup m17nFace Face */
+/*** @addtogroup m17nFace */
 /*** @{ */
 /*=*/
 
@@ -2044,7 +2044,7 @@ mface_update (MFrame *frame, MFace *face)
 /*** @} */
 /*=*/
 
-/*** @addtogroup m17nDebug Debugging */
+/*** @addtogroup m17nDebug */
 /*** @{  */
 /*=*/
 

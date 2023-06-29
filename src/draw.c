@@ -35,7 +35,7 @@
     facility.  */
 
 /***ja
-    @addtogroup m17nDraw Drawing
+    @addtogroup m17nDraw
     @brief M-text をウィンドウに描画する.
 
     m17n-gui API には、M-text を表示するための関数が用意されている。

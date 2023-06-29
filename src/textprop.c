@@ -1485,8 +1485,8 @@ mtext__adjust_plist_for_change (MText *mt, int pos, int len1, int len2)
 
 /** External API */
 
-/*** @addtogroup m17nTextProperty */
-/*** @{  */
+/*** @addtogroup m17nTextProperty
+     @{  */
 
 /*=*/
 /***en

@@ -23,8 +23,6 @@
 /***en
     @addtogroup m17nPlist
 
-    @brief Property List objects and API for them.
-
     A @e property @e list (or @e plist for short) is a list of zero or
     more properties.  A property consists of a @e key and a @e value,
     where key is a symbol and value is anything that can be cast to

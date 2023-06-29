@@ -176,23 +176,19 @@ typedef void (*M17NFunc) (void);
 /* (C2) Symbol handling */
 
 /*** @ingroup m17nCore */
-/***en @defgroup m17nSymbol Symbol  */
-/***ja @defgroup m17nSymbol シンボル */
-/*=*/
-
-/***
-    @ingroup m17nSymbol */
-/***en
+/***en @defgroup m17nSymbol Symbol
     @brief Type of symbols.
 
     The type #MSymbol is for a @e symbol object.  Its internal
     structure is concealed from application programs.  */
-
-/***ja
+/***ja @defgroup m17nSymbol シンボル
     @brief シンボルの型宣言.
 
     #MSymbol は @e シンボル (symbol) オブジェクトの型である。
     内部構造はアプリケーションプログラムからは見えない。  */
+/*=*/
+
+/*** @ingroup m17nSymbol */
 
 typedef struct MSymbol *MSymbol;
 
@@ -236,23 +232,19 @@ extern M17NFunc msymbol_get_func (MSymbol symbol, MSymbol key);
  */
 /*=*/
 /*** @ingroup m17nCore */
-/***en @defgroup m17nPlist Property List */
-/***ja @defgroup m17nPlist プロパティリスト */
-/*=*/
-
-/***
-    @ingroup m17nPlist */ 
-/***en
+/***en @defgroup m17nPlist Property List
     @brief Type of property list objects.
 
     The type #MPlist is for a @e property @e list object.  Its internal
     structure is concealed from application programs.  */
-
-/***ja
+/***ja @defgroup m17nPlist プロパティリスト
     @brief プロパティリスト・オブジェクトの型宣言.
 
     #MPlist は @e プロパティリスト (Property list) オブジェクトの型である。
     内部構造はアプリケーションプログラムからは見えない。  */
+/*=*/
+
+/*** @ingroup m17nPlist */ 
 
 typedef struct MPlist MPlist;
 
