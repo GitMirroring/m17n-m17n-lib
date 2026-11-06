@@ -3396,7 +3396,7 @@ MSymbol Mmaybe;
 MSymbol Mcoding;
 /*=*/
 /*** @} */ 
-
+/*=*/
 /***en
     @brief Define a coding system.
 
