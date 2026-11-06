@@ -70,7 +70,7 @@
 #include <ctype.h>
 #include <stdio.h>
 
-#include "m17n.h"
+#include "m17n-core.h"
 #include "m17n-misc.h"
 #include "internal.h"
 #include "symbol.h"
@@ -625,6 +625,7 @@ mchartable__lookup (MCharTable *table, int c, int *next_c, int default_p)
 /*** @addtogroup m17nChartable
      @{ */
 
+/*=*/
 /***en
     @brief Symbol whose name is "char-table".
 
