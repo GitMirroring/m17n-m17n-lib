@@ -25,7 +25,7 @@
 
 #include "plist.h"
 
-struct MSymbolStruct
+struct MSymbol
 {
   /** 1 if a value of property (including text-property) whose key is
       the symbol is a managed object.  */
@@ -40,7 +40,7 @@ struct MSymbolStruct
   /* Plist of the symbol.  */
   MPlist plist;
 
-  struct MSymbolStruct *next;
+  MSymbol next;
 };
 
 #define MSYMBOL_NAME(sym) ((sym)->name)
