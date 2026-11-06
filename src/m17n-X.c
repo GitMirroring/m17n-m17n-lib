@@ -2623,65 +2623,7 @@ xim_lookup (MInputContext *ic, MSymbol key, void *arg, MText *mt)
 #endif /* !FOR_DOXYGEN || DOXYGEN_INTERNAL_MODULE */
 
 /* External API */
-
-/*** @addtogroup m17nInputMethodWin */
-
-/*** @{ */
 /*=*/
-/***en
-    @brief Input method driver for XIM.
-
-    The driver #minput_xim_driver is for the foreign input method of
-    name #Mxim.  It uses XIM (X Input Methods) as a background input
-    engine.
-
-    As the symbol #Mxim has property #Minput_driver whose value is
-    a pointer to this driver, the input method of language #Mnil
-    and name #Mxim uses this driver.
-
-    Therefore, for such input methods, the driver dependent arguments
-    to the functions whose name begin with minput_ must be as follows.
-
-    The argument $ARG of the function minput_open_im () must be a
-    pointer to the structure #MInputXIMArgIM.  See the documentation
-    of #MInputXIMArgIM for more details.
-
-    The argument $ARG of the function minput_create_ic () must be a
-    pointer to the structure #MInputXIMArgIC. See the documentation
-    of #MInputXIMArgIC for more details.
-
-    The argument $ARG of the function minput_filter () must be a
-    pointer to the structure @c XEvent.  The argument $KEY is ignored.
-
-    The argument $ARG of the function minput_lookup () must be the
-    same one as that of the function minput_filter ().  The argument
-    $KEY is ignored.  */
-
-/***ja
-    @brief XIM用入力ドライバ.
-
-    ドライバ #minput_xim_driver は #Mxim を名前として持つ外部入力メソッド用であり、
-    XIM (X Input Methods) をバックグラウンドの入力エンジンとして使用する。
-
-    シンボル #Mxim はこのドライバへのポインタを値とするプロパティ
-    #Minput_driver を持ち、LANGUAGE が #Mnil で名前が #Mxim 
-    である入力メソッドはこのドライバを利用する。
-
-    したがって、それらの入力メソッドでは、minput_ 
-    で始まる名前を持つ関数のドライバに依存する引数は次のようなものでなくてはならない。
-
-    関数 minput_open_im () の引数 $ARG は構造体 #MInputXIMArgIM 
-    へのポインタでなくてはならない。詳細については #MInputXIMArgIM の説明を参照。
-
-    関数 minput_create_ic () の引数 $ARG は構造体 #MInputXIMArgIC 
-    へのポインタでなくてはならない。詳細については #MInputXIMArgIC の説明を参照。
-
-    関数 minput_filter () の引数 $ARG は構造体 @c XEvent 
-    へのポインタでなくてはならない。引数 $KEY は無視される。
-
-    関数 minput_lookup () の引数 $ARG は関数 function minput_filter () 
-    の引数 $ARG と同じものでなくてはならない。 引数 $KEY は、無視される。  */
-
 MInputDriver minput_xim_driver =
   { xim_open_im, xim_close_im, xim_create_ic, xim_destroy_ic,
     xim_filter, xim_lookup, NULL };
