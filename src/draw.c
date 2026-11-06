@@ -35,7 +35,7 @@
     facility.  */
 
 /***ja
-    @addtogroup m17nDraw Drawing
+    @addtogroup m17nDraw 表示
     @brief M-text をウィンドウに描画する.
 
     m17n-gui API には、M-text を表示するための関数が用意されている。
@@ -118,7 +118,7 @@ analyse_bidi_level (MGlyphString *gstring)
   int *logical = alloca (sizeof (int) * len);
   char *levels = alloca (len);
 
-  memset (levels, 0, sizeof (int) * len);
+  memset (levels, 0, len);
 #endif /* not HAVE_FRIBIDI */
 
   for (g = MGLYPH (1), i = 0; g->type != GLYPH_ANCHOR; g++, i++)
