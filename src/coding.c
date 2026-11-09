@@ -3626,7 +3626,7 @@ MSymbol Mcoding;
     <li> キーが @b Mcharsets で値が plist の時
 
     値はこのコード系でサポートされる文字セットのリストである。plistのキーは
-    #Msymbol、値は文字セットを示すシンボルでなくてはならない。
+    #Msymbol 、値は文字セットを示すシンボルでなくてはならない。
 
     <li> キーが @b Mflags 値が plist の時
 
@@ -3709,7 +3709,7 @@ MSymbol Mcoding;
     <li> キーが @b Mdesignation で値が plist の時
 
     タイプが @b Miso_2022 ならば、値は各文字をどのように指示するかを示す。
-    plist のキーは #Minteger、値は集合（graphic register）
+    plist のキーは #Minteger 、値は集合（graphic register）
     を示す数字である。N番目の要素の値は、文字セットリストの N 
     番目の文字セットに対応する。値が 0..3 であれば、文字セットがすでに 
     G0..G3 に指示 されている。
@@ -3721,7 +3721,7 @@ MSymbol Mcoding;
 
     タイプが @b Miso_2022 ならば、値は各集合をどのように呼び出すかを示す。
     plist の長さは 1 ないし 2 である。plist のキーは 
-    #Minteger、値は集合（graphic register)を示す数字である。
+    #Minteger 、値は集合（graphic register)を示す数字である。
     最初の要素の値が図形文字集合左半面に呼び出される集合を示す。
     plist の長さが 1 ならば、右半面には何も呼び出されない。
     そうでければ、２つめの要素の値が図形文字集合右半面に呼び出される集合を示す。
