@@ -75,13 +75,13 @@ extern int merror_code;
 
 enum M17NStatus
   {
-    /***en No modules is initialized, and all modules are finalized.  */
+    /*** No modules is initialized, and all modules are finalized.  */
     M17N_NOT_INITIALIZED, 
-    /***en Only the modules in CORE API are initialized.  */
+    /*** Only the modules in CORE API are initialized.  */
     M17N_CORE_INITIALIZED,
-    /***en Only the modules in CORE and SHELL APIs are initialized.  */
+    /*** Only the modules in CORE and SHELL APIs are initialized.  */
     M17N_SHELL_INITIALIZED, 
-    /***en All modules are initialized.  */
+    /*** All modules are initialized.  */
     M17N_GUI_INITIALIZED
   };
 
