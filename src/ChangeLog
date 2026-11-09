@@ -1,3 +1,36 @@
+2026-11-09  K. Handa  <handa@gnu.org>
+
+	* m17n-gui.c (mframe): Fix comments for Doxygen.
+	(mframe_get_prop): Add @return comments for Doxygen.
+
+	* m17n-core.h (enum M17NStatus): Fix comments for Doxygen.
+
+	* coding.c (mconv_define_coding): Fix Japanese comments for Doxygen.
+
+2026-11-06  K. Handa  <handa@gnu.org>
+
+	* chartab.c: Include "m17n-core.h" instead of "m17n.h".  Add an
+	extra comment to control Doxygen.
+
+	* coding.c: Add an extra comment to control Doxygen.
+
+	* database.c: Add extra comments to control Doxygen.
+
+	* draw.c: Fix a Japanese comment for Doxygen.
+	(analyse_bidi_level): Fix initialization of the variable "levels".
+
+	* face.c: Fix a Japanese comment for Doxygen.
+
+	* m17n-X.h (minput_xim_driver): Move comments from m17n-X.c.
+
+	* m17n-X.c (minput_xim_driver): Move comments to m17n-X.h.
+
+	* m17n-core.h (MSymbol): Struct name changed MSymbol.
+
+	* m17n-misc.h (enum MErrorCode): Fix the comment.
+
+	* symbol.h (MSymbol):  Struct name changed MSymbol.
+
 2026-10-16  Mike FABIAN  <mfabian@redhat.com>
 
 	* m17n-gd.c:  Include <stdint.ht>. Add (intptr_t) casting.
