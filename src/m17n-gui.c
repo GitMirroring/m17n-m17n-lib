@@ -601,7 +601,7 @@ MSymbol Mfont_descent;
 
     生成されたフレームは、指定したカラーマップを使用する。
 
-    <li> #Mfont. 値は、#Mx, #Mfreetype, #Mxft のいずれか。
+    <li> @b Mfont. 値は、#Mx, #Mfreetype, #Mxft のいずれか。
 
     生成されたフレームは指定したフォントバックエンドを使用する。値が 
     #Mx であれば X のコアフォント、#Mfreetype であれば FreeType 
@@ -742,6 +742,7 @@ mframe (MPlist *plist)
 
         Mdepth          unsigned        Depth of the frame.
 @endverbatim
+@return property value
 */
 
 /***ja
@@ -781,7 +782,7 @@ mframe (MPlist *plist)
 
         Mdepth          unsigned        フレームの深さ
 @endverbatim
-
+@return プロパティ値
 */
 
 void *
